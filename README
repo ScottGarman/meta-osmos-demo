@@ -1,0 +1,43 @@
+meta-osmos-demo
+===============
+
+A metadata layer for the Yocto Project (http://yoctoproject.org).
+
+This layer provides necessary dependencies to run the Osmos game
+(http://www.hemispheregames.com/osmos/). It includes a custom image
+recipe, osmos-demo-image, which boots up to X and launches a terminal
+window. The Osmos game itself is not included in this image, just an
+environment that you can run it under.
+
+It has been used as a demo for the MinnowBoard (http://minnowboard.org).
+
+Dependencies
+============
+
+This layer depends on:
+
+  URI: git://git.openembedded.org/bitbake
+  branch: master
+  revision: HEAD
+
+  URI: git://git.openembedded.org/openembedded-core
+  branch: danny
+  revision: HEAD
+
+Or you can combine the above by using:
+
+  URI: git://git.yoctoproject.org/poky
+  branch: danny
+  revision: HEAD
+
+Maintenance
+===========
+
+Layer maintainer: Scott Garman <scott.a.garman@intel.com>
+
+License
+=======
+
+This layer is available under the MIT license. The libglu recipe was
+taken from the oe-core master branch, and the openal-soft recipe was
+taken from the meta-openembedded master branch. 
